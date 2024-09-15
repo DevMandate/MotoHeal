@@ -112,6 +112,263 @@
       .carousel-item.active img {
         transform: scale(1.1); /* Scale up to create the zoom effect */
       }
+
+      .card-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+     }
+  
+     .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: scale(1.05); /* Slightly scale the card */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    }
+
+    /* Footer styling starts here */
+    footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #ad0505, #0f0592);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 0px;
+    font-size: 13px;
+    line-height: 20px;
+    
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo{
+    width: 300px;
+    margin-bottom: 30px;
+    
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li{
+    text-decoration: none;
+    color: #fff;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+
+}
+
+.fa-solid{
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: none;
+    outline: none;
+
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa-solid{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+
+}
+
+.copyright{
+    text-align: center;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+
+
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+
+    .col{
+        flex-basis: 100%;
+        
+    
+    }
+    
+    .col:nth-child(2), .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+  }
+    /* Footer styling ends here */
+
+    /* brands */
+    .brands{
+        margin: 100px auto;
+    }
+
+    .col-5{
+        width: 160px;
+    }
+
+    .col-5 img{
+        width: 100%;
+        cursor: pointer;
+        filter: grayscale(100%);
+    }
+
+    .col-5 img:hover{
+        filter: grayscale(0);    
+    }
+
+
+    /* testimonial */
+
+    .testimonial{
+        padding-top: 100px;
+    }
+
+    .testimonial .col-3{
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+
+    .testimonial .col-3 img{
+        width: 50px;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+
+    .testimonial .col-3:hover{
+        transform: translateY(-10px);
+    }
+
+    .fa.fa-quote-left{
+        font-size: 34px;
+        color: #ff523b;
+    }
+    .col-3 p{
+        font-size: 12px;
+        margin: 12px 0;
+        color: #777 ;
+    }
+
+    .testimonial .col-3 h3{
+        font-weight: 600;
+        color: #555;
+        font-size: 16px;
+
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -586,14 +843,382 @@ style="
   </div>
 </div>
 </section>
+<hr>
+<br><br>
 <!-- section 5 ends here -->
 
+<!-- Section 6 starts here -->
+ <section class="row">
+  <h1 class="text-center text-uppercase display-3">Featured rides</h1>
+  <p class="text-center display-5">Explore our curated selection of the finest cars available now.</p>
+  <span class="text-center display-6">Porsche Cayenne</span>
+
+  <div class="col-md-3 p-5">
+    <div class="card shadow card-hover" data-aos="zoom-in" data-aos-duration="3000">
+      <div class="card-header">
+        <h3 class="text-center bg-success text-white">Cayenne E-Hybrid</h3>
+      </div>
+      <div class="card-body" style="font-size: 20px;">
+        <img src="images/porsche1.jpg" class="card-img" alt="Cayenne E-Hybrid">
+        <br><br>
+        <p><b>Make: </b> 2018</p>
+        <p><b>Model: </b> Cayenne E-Hybrid</p>
+        <p><b>Engine: </b> 3000 CC</p>
+        <p><b>Offer: </b> <span class="badge bg-danger mine"><strike>KES. 13,900,000</strike></span> KES. 12,000,000</p>
+        <p><b>Availability: </b> <span class="badge bg-danger mine">20% OFF</span> In-Stock</p>
+        <p><b>Transmission: </b> Auto</p>
+        <p><b>Fuel: </b> <span class="badge bg-primary mine text-white">Diesel Variants Available</span> Petrol</p>
+        <p><b>Drive: </b> 4WD</p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between">
+          <b class="btn btn-danger fw-bold">MORE DETAILS</b>
+          <b class="btn btn-danger fw-bold">GET A QUOTE</b>
+        </div>
+        <div class="text-center mt-3">
+          <b class="btn btn-dark fw-bold">RESERVE THIS CAR</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 p-5">
+    <div class="card shadow card-hover" data-aos="zoom-in" data-aos-duration="3000">
+      <div class="card-header">
+        <h3 class="text-center bg-success text-white">Cayenne S E-Hybrid</h3>
+      </div>
+      <div class="card-body" style="font-size: 20px;">
+        <img src="images/porsche2.jpg" class="card-img" alt="Cayenne S E-Hybrid">
+        <br><br>
+        <p><b>Make: </b> 2018</p>
+        <p><b>Model: </b> Cayenne S E-Hybrid</p>
+        <p><b>Engine: </b> 3500 CC</p>
+        <p><b>Offer: </b> <span class="badge bg-danger mine"><strike>KES. 14,500,000</strike></span> KES. 13,800,000</p>
+        <p><b>Availability: </b> <span class="badge bg-danger mine">15% OFF</span> In-Stock</p>
+        <p><b>Transmission: </b> Auto</p>
+        <p><b>Fuel: </b> <span class="badge bg-primary mine text-white">Petrol Variants Available</span> Diesel</p>
+        <p><b>Drive: </b> 4WD</p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between">
+          <b class="btn btn-danger fw-bold">MORE DETAILS</b>
+          <b class="btn btn-danger fw-bold">GET A QUOTE</b>
+        </div>
+        <div class="text-center mt-3">
+          <b class="btn btn-dark fw-bold">RESERVE THIS CAR</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 p-5">
+    <div class="card shadow card-hover" data-aos="zoom-in" data-aos-duration="3000">
+      <div class="card-header">
+        <h3 class="text-center bg-success text-white">Cayenne GTS</h3>
+      </div>
+      <div class="card-body" style="font-size: 20px;">
+        <img src="images/porsche3.jpg" class="card-img" alt="Cayenne GTS">
+        <br><br>
+        <p><b>Make: </b> 2018</p>
+        <p><b>Model: </b> Cayenne GTS</p>
+        <p><b>Engine: </b> 4000 CC</p>
+        <p><b>Offer: </b> <span class="badge bg-danger mine"><strike>KES. 15,000,000</strike></span> KES. 14,300,000</p>
+        <p><b>Availability: </b> <span class="badge bg-danger mine">13% OFF</span> In-Stock</p>
+        <p><b>Transmission: </b> Auto</p>
+        <p><b>Fuel: </b> <span class="badge bg-primary mine text-white">Diesel Variants Available</span> Petrol</p>
+        <p><b>Drive: </b> 4WD</p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between">
+          <b class="btn btn-danger fw-bold">MORE DETAILS</b>
+          <b class="btn btn-danger fw-bold">GET A QUOTE</b>
+        </div>
+        <div class="text-center mt-3">
+          <b class="btn btn-dark fw-bold">RESERVE THIS CAR</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 p-5">
+    <div class="card shadow card-hover" data-aos="zoom-in" data-aos-duration="3000">
+      <div class="card-header">
+        <h3 class="text-center bg-success text-white">Cayenne Turbo E-Hybrid</h3>
+      </div>
+      <div class="card-body" style="font-size: 20px;">
+        <img src="images/porsche4.jpg" class="card-img" alt="Cayenne Turbo E-Hybrid">
+        <br><br>
+        <p><b>Make: </b> 2018</p>
+        <p><b>Model: </b> Cayenne Turbo E-Hybrid</p>
+        <p><b>Engine: </b> 3000 CC</p>
+        <p><b>Offer: </b> <span class="badge bg-danger mine"><strike>KES. 16,000,000</strike></span> KES. 15,500,000</p>
+        <p><b>Availability: </b> <span class="badge bg-danger mine">17% OFF</span> In-Stock</p>
+        <p><b>Transmission: </b> Auto</p>
+        <p><b>Fuel: </b> <span class="badge bg-primary mine text-white">Diesel Variants Available</span> Petrol</p>
+        <p><b>Drive: </b> 4WD</p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between">
+          <b class="btn btn-danger fw-bold">MORE DETAILS</b>
+          <b class="btn btn-danger fw-bold">GET A QUOTE</b>
+        </div>
+        <div class="text-center mt-3">
+          <b class="btn btn-dark fw-bold">RESERVE THIS CAR</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 6 ends here -->
+
+<!-- Section 7 starts here -->
+<section class="row">
+  
+  <span class="text-center display-6">Mercedes S-Class</span>
+
+  <div class="col-md-4 p-5">
+    <div class="card shadow card-hover" data-aos="zoom-in" data-aos-duration="3000">
+      <div class="card-header">
+        <h3 class="text-center bg-success text-white">S350d L 313</h3>
+      </div>
+      <div class="card-body" style="font-size: 20px;">
+        <img src="images/S 1.jpg" class="card-img" alt="Cayenne E-Hybrid">
+        <br><br>
+        <p><b>Make: </b> 2018</p>
+        <p><b>Model: </b> S350d L 313</p>
+        <p><b>Engine: </b> 4500 CC</p>
+        <p><b>Offer: </b> <span class="badge bg-danger mine"><strike>KES. 20,500,000</strike></span> KES. 18,900,000</p>
+        <p><b>Availability: </b> <span class="badge bg-danger mine">20% OFF</span> In-Stock</p>
+        <p><b>Transmission: </b> Auto</p>
+        <p><b>Fuel: </b> <span class="badge bg-primary mine text-white">Diesel Variants Available</span> Petrol</p>
+        <p><b>Drive: </b> 4WD</p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between">
+          <b class="btn btn-danger fw-bold">MORE DETAILS</b>
+          <b class="btn btn-danger fw-bold">GET A QUOTE</b>
+        </div>
+        <div class="text-center mt-3">
+          <b class="btn btn-dark fw-bold">RESERVE THIS CAR</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 p-5">
+    <div class="card shadow card-hover" data-aos="zoom-in" data-aos-duration="3000">
+      <div class="card-header">
+        <h3 class="text-center bg-success text-white">S450d L 4Matic.</h3>
+      </div>
+      <div class="card-body" style="font-size: 20px;">
+        <img src="images/s2.jpg" class="card-img" alt="Cayenne S E-Hybrid">
+        <br><br>
+        <p><b>Make: </b> 2018</p>
+        <p><b>Model: </b> S450d L 4Matic.</p>
+        <p><b>Engine: </b> 3500 CC</p>
+        <p><b>Offer: </b> <span class="badge bg-danger mine"><strike>KES. 14,500,000</strike></span> KES. 13,800,000</p>
+        <p><b>Availability: </b> <span class="badge bg-danger mine">15% OFF</span> In-Stock</p>
+        <p><b>Transmission: </b> Auto</p>
+        <p><b>Fuel: </b> <span class="badge bg-primary mine text-white">Petrol Variants Available</span> Diesel</p>
+        <p><b>Drive: </b> 4WD</p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between">
+          <b class="btn btn-danger fw-bold">MORE DETAILS</b>
+          <b class="btn btn-danger fw-bold">GET A QUOTE</b>
+        </div>
+        <div class="text-center mt-3">
+          <b class="btn btn-dark fw-bold">RESERVE THIS CAR</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 p-5">
+    <div class="card shadow card-hover" data-aos="zoom-in" data-aos-duration="3000">
+      <div class="card-header">
+        <h3 class="text-center bg-success text-white">S580e 4Matic L.</h3>
+      </div>
+      <div class="card-body" style="font-size: 20px;">
+        <img src="images/s3.jpg" class="card-img" alt="Cayenne GTS">
+        <br><br>
+        <p><b>Make: </b> 2018</p>
+        <p><b>Model: </b> Cayenne GTS</p>
+        <p><b>Engine: </b> 4000 CC</p>
+        <p><b>Offer: </b> <span class="badge bg-danger mine"><strike>KES. 15,000,000</strike></span> KES. 14,300,000</p>
+        <p><b>Availability: </b> <span class="badge bg-danger mine">13% OFF</span> In-Stock</p>
+        <p><b>Transmission: </b> Auto</p>
+        <p><b>Fuel: </b> <span class="badge bg-primary mine text-white">Diesel Variants Available</span> Petrol</p>
+        <p><b>Drive: </b> 4WD</p>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-between">
+          <b class="btn btn-danger fw-bold">MORE DETAILS</b>
+          <b class="btn btn-danger fw-bold">GET A QUOTE</b>
+        </div>
+        <div class="text-center mt-3">
+          <b class="btn btn-dark fw-bold">RESERVE THIS CAR</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+</section>
+
+<!-- section 7 ends here -->
 
 
 
 
 
 
+
+
+
+
+
+
+
+<!-- testimonial -->
+<div class="testimonial">
+  <div class="small-container">
+      <div class="row">
+          <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea commodi id recusandae voluptatem, quo quaerat?</p>
+              <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+              </div>
+              <img src="images/test4.webp" alt="">
+              <h3>Sean Claudia</h3>
+          </div>
+
+          <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea commodi id recusandae voluptatem, quo quaerat?</p>
+              <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+              </div>
+              <img src="images/test2.jpg" alt="">
+              <h3>Partel Cart</h3>
+          </div>
+
+          <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea commodi id recusandae voluptatem, quo quaerat?</p>
+              <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+              </div>
+              <img src="images/test3.jfif" alt="">
+              <h3>Youss Amina</h3>
+          </div>
+      </div>        
+  </div>
+</div>
+
+<!-- brands -->
+<div class="brands">
+  <div class="small-container">
+      <div class="row">
+          <div class="col-5">
+              <img src="images/b1.webp">
+          </div>
+          <div class="col-5">
+              <img src="images/b2.webp">
+          </div>
+          <div class="col-5">
+              <img src="images/b3.webp">
+          </div>
+          <div class="col-5">
+              <img src="images/b5.webp">
+          </div>
+          <div class="col-5">
+              <img src="images/b6.webp">
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- FOOTER starts here -->
+<footer>
+  <div class="row">
+      <div class="col">
+          <img src="images/MotoHeal Logo.PNG" class="logo">
+          <p> . Don't Miss Out! Exclusive Deals Just for You!. <br>
+              . Get an instant 20% OFF on your first car service when you sign up for our newsletter! <br>                     
+              . Join the MotoHeal VIP Club!</p>
+      </div>
+
+      <div class="col">
+          <img src="" alt="">
+          <h3>Trending! <div class="underline"> <span></span></div></h3>
+          <p>Top Cars in Demand! <br> Explore the most sought-after cars and accessories available today. <br>  Don’t wait, these deals won’t last!   </p>
+          <p>Refer & Earn! <br> Love MotoHeal? Refer a friend and get KES 5,000 OFF your next purchase.</p>
+          <p class="email-id">motoheal.ac.ke</p>
+          <h4>+254796578077</h4>
+
+      
+      </div>
+
+      <div class="col">
+          <h3>Links <div class="underline"> <span></span></div> </h3>
+          <ul>
+              <li><a href=""></a> Home</li>
+              <li><a href=""></a> Accessories</li>
+              <li><a href=""></a> Maintenance</li>
+              <li><a href=""></a> Dealership</li>
+              <li><a href=""></a> Contact Us</li>
+          </ul>
+      </div>
+      
+      <div class="col">
+          <h3>Newsletter <div class="underline"> <span></span></div></h3>
+          <form action="">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Enter your email id" required>
+              <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+
+          </form>
+          <div class="social-icons">
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-tiktok"></i>
+              <i class="fa-brands fa-telegram"></i>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <p class="copyright"> Caleb Murambi @ 2024 - All Rights Reserved</p>
+   
+
+ </footer>
+
+
+
+
+
+<!-- Footer ends here -->
 
 
 
