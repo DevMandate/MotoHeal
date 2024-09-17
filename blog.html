@@ -372,6 +372,27 @@ hr{
 
     }
 
+    .testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .testimonial-card img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Optional: Add a bounce-in effect for the testimonials on page load */
+  @keyframes pulse {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  .testimonial-card[data-aos="fade-up"] {
+    animation: pulse 4s infinite;
+  }
+
+
 
 
     </style>
@@ -677,6 +698,128 @@ hr{
     </script>
     <br>    
     <!-- Section 5: Car Maintenance FAQs emds Here -->
+
+
+
+
+    <!-- Section 6: User Testimonials Starts Here -->
+    <section style="padding: 70px 20px; background: linear-gradient(135deg, #1a1a1a, #036145); font-family: 'Poppins', sans-serif; border-radius: 25px; color: #fff; overflow: hidden;">
+
+      <!-- Section Heading -->
+      <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 2.8rem; margin-bottom: 30px; font-weight: 700; color: #ffcc00; letter-spacing: 1.5px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);" data-aos="fade-up" data-aos-duration="1500">
+          What Our Customers Say
+        </h2>
+        <p style="font-size: 1.2rem; color: #fff; line-height: 1.6; max-width: 800px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+          Hear from our satisfied customers who have experienced positive results using MotoHeal’s services and tips. Read their success stories and see their star ratings.
+        </p>
+      </div>
+
+      <!-- Testimonials Section with AOS Animations -->
+      <div class="testimonial-slider-container" style="position: relative; overflow: hidden; padding: 70px 20px;">
+        <div class="testimonial-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card" style="padding: 20px; border-radius: 15px; text-align: center; background-color: #d1e0e0; transition: transform 0.3s, box-shadow 0.3s; transform: translateY(0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" data-aos="fade-up" data-aos-duration="1500">
+            <i class="fa fa-quote-left" style="color: #036145; font-size: 2rem;"></i>
+            <p style="font-style: italic; color: #333; font-size: 1.2rem; line-height: 1.6;">MotoHeal saved me from spending a fortune on my car's engine repair. Their team’s prompt and professional service was top-notch. I would recommend them to anyone!</p>
+            <div class="rating" style="margin: 10px 0;">
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star-o" style="color: #ffcc00;"></i>
+            </div>
+            <img src="img/s1.jfif" alt="Customer Image 1" style="border-radius: 50%; width: 100px; height: 100px; margin-top: 15px; transition: transform 0.3s; transform: scale(1);">
+            <h3 style="font-weight: bold; margin-top: 10px; color: #036145;">Sean Claudia</h3>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card" style="padding: 20px; border-radius: 15px; text-align: center; background-color: #f2b5d4; transition: transform 0.3s, box-shadow 0.3s; transform: translateY(0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+            <i class="fa fa-quote-left" style="color: #036145; font-size: 2rem;"></i>
+            <p style="font-style: italic; color: #333; font-size: 1.2rem; line-height: 1.6;">The oil change service from MotoHeal was quick and efficient. My car feels brand new! I’ll definitely be using their services again.</p>
+            <div class="rating" style="margin: 10px 0;">
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+            </div>
+            <img src="img/s2.webp" alt="Customer Image 2" style="border-radius: 50%; width: 100px; height: 100px; margin-top: 15px; transition: transform 0.3s; transform: scale(1);">
+            <h3 style="font-weight: bold; margin-top: 10px; color: #036145;">Partel Cart</h3>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card" style="padding: 20px; border-radius: 15px; text-align: center; background-color: #e3f2fd; transition: transform 0.3s, box-shadow 0.3s; transform: translateY(0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
+            <i class="fa fa-quote-left" style="color: #036145; font-size: 2rem;"></i>
+            <p style="font-style: italic; color: #333; font-size: 1.2rem; line-height: 1.6;">Thanks to MotoHeal's advice on tire maintenance, I managed to extend the life of my tires by months! Incredible service and expert tips.</p>
+            <div class="rating" style="margin: 10px 0;">
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star-o" style="color: #ffcc00;"></i>
+            </div>
+            <img src="img/s3.webp" alt="Customer Image 3" style="border-radius: 50%; width: 100px; height: 100px; margin-top: 15px; transition: transform 0.3s; transform: scale(1);">
+            <h3 style="font-weight: bold; margin-top: 10px; color: #036145;">Youss Amina</h3>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card" style="padding: 20px; border-radius: 15px; text-align: center; background-color: #d0f4de; transition: transform 0.3s, box-shadow 0.3s; transform: translateY(0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+            <i class="fa fa-quote-left" style="color: #036145; font-size: 2rem;"></i>
+            <p style="font-style: italic; color: #333; font-size: 1.2rem; line-height: 1.6;">MotoHeal provided excellent service when I needed a quick engine repair. Their expertise saved my car and wallet. Highly recommended!</p>
+            <div class="rating" style="margin: 10px 0;">
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star-half-o" style="color: #ffcc00;"></i>
+            </div>
+            <img src="img/s4.jfif" alt="Customer Image 4" style="border-radius: 50%; width: 100px; height: 100px; margin-top: 15px; transition: transform 0.3s; transform: scale(1);">
+            <h3 style="font-weight: bold; margin-top: 10px; color: #036145;">Nina Martins</h3>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-card" style="padding: 20px; border-radius: 15px; text-align: center; background-color: #f4e3b2; transition: transform 0.3s, box-shadow 0.3s; transform: translateY(0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">
+            <i class="fa fa-quote-left" style="color: #036145; font-size: 2rem;"></i>
+            <p style="font-style: italic; color: #333; font-size: 1.2rem; line-height: 1.6;">My car's maintenance has never been easier thanks to MotoHeal. Their team provides reliable tips and top-notch services every time.</p>
+            <div class="rating" style="margin: 10px 0;">
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star-o" style="color: #ffcc00;"></i>
+            </div>
+            <img src="img/s5.webp" alt="Customer Image 5" style="border-radius: 50%; width: 100px; height: 100px; margin-top: 15px; transition: transform 0.3s; transform: scale(1);">
+            <h3 style="font-weight: bold; margin-top: 10px; color: #036145;">Luke Trent</h3>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="testimonial-card" style="padding: 20px; border-radius: 15px; text-align: center; background-color: #e0f7fa; transition: transform 0.3s, box-shadow 0.3s; transform: translateY(0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
+            <i class="fa fa-quote-left" style="color: #036145; font-size: 2rem;"></i>
+            <p style="font-style: italic; color: #333; font-size: 1.2rem; line-height: 1.6;">MotoHeal helped me diagnose a major issue with my car's performance. Their quick response and professionalism are unbeatable!</p>
+            <div class="rating" style="margin: 10px 0;">
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+              <i class="fa fa-star" style="color: #ffcc00;"></i>
+            </div>
+            <img src="img/s6.jfif" alt="Customer Image 6" style="border-radius: 50%; width: 100px; height: 100px; margin-top: 15px; transition: transform 0.3s; transform: scale(1);">
+            <h3 style="font-weight: bold; margin-top: 10px; color: #036145;">Diana Rivera</h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: User Testimonials ends Here -->
+
+
+
+
+
+
 
 
 
