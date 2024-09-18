@@ -372,6 +372,283 @@ hr{
 
     }
 
+    /* Header Section Styling */
+.financing-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('path-to-your-background-image.jpg') center center/cover no-repeat;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.financing-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.financing-header p {
+  font-family: 'Open Sans', sans-serif;
+  color: #f8f9fa;
+}
+
+.financing-btn {
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.financing-btn:hover {
+  transform: scale(1.05);
+}
+
+.financing-btn.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.financing-btn.btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.financing-header .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.financing-header .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* AOS animation custom styling */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* financing options styling */
+/* Section Title Styling */
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.lead {
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Card Styling */
+.financing-card {
+  background-color: #f8f9fa;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.financing-card:hover {
+  transform: translateY(-10px);
+}
+
+.financing-card h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.financing-card p {
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Comparison Table Styling */
+.financing-table th, .financing-table td {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  padding: 15px;
+}
+
+.financing-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.financing-table td {
+  background-color: #f1f1f1;
+}
+
+/* Financing Calculator */
+
+/* Section Title Styling */
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.lead {
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Form and Input Styling */
+.form-control {
+  border: 2px solid #ced4da;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+.financing-btn {
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.financing-btn:hover {
+  transform: scale(1.05);
+}
+
+.financing-btn.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+/* Calculation Result Styling */
+.calculation-result {
+  background-color: #f8f9fa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.result-title {
+  font-family: 'Poppins', sans-serif;
+  color: #007bff;
+  font-size: 1.8rem;
+}
+
+.result-value {
+  color: #28a745;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* Financing eligibility and application section */
+/* Section Title Styling */
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.lead {
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Eligibility Requirements List Styling */
+.list-group-item {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 15px 20px;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.list-group-item i {
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.list-group-item:not(:last-child) {
+  border-bottom: 2px solid #ddd;
+}
+
+/* FAQ Section */
+.faq-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.collapse .card-body h5 {
+  color: #007bff;
+}
+
+.collapse .card-body p {
+  color: #666;
+}
+
+/* How to Apply Timeline Styling */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.timeline-item h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.timeline-item p {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  font-size: 1rem;
+}
+
+.timeline-item i {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Apply Button */
+.apply-btn {
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+.apply-btn:hover {
+  transform: scale(1.05);
+}
+
+
+
 
 
     </style>
@@ -480,6 +757,299 @@ hr{
     </section>
     <br />
     <!-- Section 1 ends here -->
+
+    <!-- section 2 starts here -->
+    <div class="container-fluid p-5 text-white text-center financing-header">
+      <div class="row align-items-center">
+        <div class="col-md-8 mx-auto">
+          <h1 class="display-4" data-aos="fade-up" data-aos-duration="1000">Flexible Financing Options for Your Next Car</h1>
+          <p class="lead mt-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            Drive your dream car with affordable payment plans tailored for you.
+          </p>
+          <div class="mt-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <a href="#apply-now" class="btn btn-lg btn-primary mx-2 financing-btn">Apply for Financing</a>
+            <a href="#pre-approval" class="btn btn-lg btn-outline-light mx-2 financing-btn">Get Pre-Approved</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section 2 ends here -->
+
+    <!-- section 3 starts Here -->
+    <div class="container my-5 financing-overview" id="financing-options">
+      <div class="row text-center mb-4">
+        <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="section-title">Explore Our Financing Options</h2>
+          <p class="lead">Find the best financing solution that suits your needs. Choose from loans, leases, or installment plans with flexible terms.</p>
+        </div>
+      </div>
+    
+      <!-- Financing Options Cards -->
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1200">
+          <div class="card financing-card">
+            <div class="card-body">
+              <h5 class="card-title">Car Loans</h5>
+              <p class="card-text">Own your car with easy monthly installments, competitive interest rates, and customizable loan terms.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+          <div class="card financing-card">
+            <div class="card-body">
+              <h5 class="card-title">Car Leasing</h5>
+              <p class="card-text">Leasing allows you to drive your favorite cars for a lower upfront cost, with flexible upgrade options at the end of the term.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+          <div class="card financing-card">
+            <div class="card-body">
+              <h5 class="card-title">Installment Plans</h5>
+              <p class="card-text">Get behind the wheel with no long-term commitment. Enjoy low down payments and short-term installment options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Comparison Table -->
+      <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-12">
+          <h3 class="text-center mb-4">Compare Financing Options</h3>
+          <table class="table table-bordered text-center financing-table">
+            <thead>
+              <tr>
+                <th scope="col">Financing Option</th>
+                <th scope="col">Interest Rates</th>
+                <th scope="col">Loan Terms</th>
+                <th scope="col">Down Payment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Car Loans</td>
+                <td>From 3.5% APR</td>
+                <td>12 to 60 months</td>
+                <td>10% - 20%</td>
+              </tr>
+              <tr>
+                <td>Car Leasing</td>
+                <td>2% - 5% APR</td>
+                <td>24 to 48 months</td>
+                <td>15% - 25%</td>
+              </tr>
+              <tr>
+                <td>Installment Plans</td>
+                <td>No Interest</td>
+                <td>6 to 18 months</td>
+                <td>5% - 10%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <!-- section 3 ends here  -->
+
+    <!-- section 4 starts here -->
+    <div class="container my-5 financing-calculator-section" id="financing-calculator">
+      <div class="row text-center mb-4">
+        <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="section-title">Financing Calculator</h2>
+          <p class="lead">Estimate your monthly payments by entering the car price, down payment, and loan term.</p>
+        </div>
+      </div>
+    
+      <!-- Calculator Form -->
+      <div class="row justify-content-center">
+        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200">
+          <form id="calculator-form">
+            <div class="form-group mb-3">
+              <label for="car-price">Car Price ($)</label>
+              <input type="number" class="form-control" id="car-price" placeholder="Enter car price" required>
+            </div>
+    
+            <div class="form-group mb-3">
+              <label for="down-payment">Down Payment ($)</label>
+              <input type="number" class="form-control" id="down-payment" placeholder="Enter down payment" required>
+            </div>
+    
+            <div class="form-group mb-3">
+              <label for="loan-term">Loan Term (months)</label>
+              <input type="number" class="form-control" id="loan-term" placeholder="Enter loan term in months" required>
+            </div>
+    
+            <div class="form-group mb-3">
+              <label for="interest-rate">Interest Rate (%)</label>
+              <input type="number" class="form-control" id="interest-rate" placeholder="Enter interest rate" required>
+            </div>
+    
+            <button type="button" class="btn btn-primary btn-lg btn-block mt-4 financing-btn" onclick="calculatePayment()">Calculate Your Payment</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- Display Calculated Monthly Payment -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+          <div class="calculation-result text-center p-4" data-aos="fade-up" data-aos-duration="1200" id="payment-result" style="display: none;">
+            <h3 class="result-title">Estimated Monthly Payment</h3>
+            <p class="result-value display-4" id="monthly-payment">$0.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function calculatePayment() {
+  // Get input values
+  const carPrice = document.getElementById('car-price').value;
+  const downPayment = document.getElementById('down-payment').value;
+  const loanTerm = document.getElementById('loan-term').value;
+  const interestRate = document.getElementById('interest-rate').value;
+
+  // Simple loan calculation formula: (P - D) * [ (r(1 + r)^n) / ((1 + r)^n - 1) ]
+  const loanAmount = carPrice - downPayment;
+  const monthlyInterestRate = (interestRate / 100) / 12;
+  const totalMonths = loanTerm;
+  const monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -totalMonths));
+
+  // Display the result
+  const resultElement = document.getElementById('payment-result');
+  const paymentElement = document.getElementById('monthly-payment');
+  
+  if (!isNaN(monthlyPayment) && monthlyPayment > 0) {
+    resultElement.style.display = 'block';
+    paymentElement.textContent = `$${monthlyPayment.toFixed(2)}`;
+  } else {
+    resultElement.style.display = 'block';
+    paymentElement.textContent = '$0.00';
+  }
+}
+
+    </script>    
+
+    <!-- section 4 ends here -->
+
+    <!-- section 5 starts here -->
+     <!-- Eligibility Requirements Section -->
+    <div class="container my-5 eligibility-section" id="eligibility-requirements">
+      <div class="row text-center mb-4">
+        <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="section-title">Eligibility Requirements</h2>
+          <p class="lead">Find out if you qualify for our flexible financing options by meeting the criteria below.</p>
+        </div>
+      </div>
+
+      <!-- Eligibility Criteria List -->
+      <div class="row justify-content-center">
+        <div class="col-md-8" data-aos="fade-up" data-aos-duration="1200">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <i class="fas fa-user-check mr-3"></i>
+              Must be at least 18 years of age.
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-credit-card mr-3"></i>
+              Proof of income or employment (minimum 6 months).
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-chart-line mr-3"></i>
+              Credit score of 600 or above (varies based on the car model and loan type).
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-id-card mr-3"></i>
+              Valid driver's license or government-issued ID.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAQs Section (Optional) -->
+      <div class="row mt-5" data-aos="fade-up" data-aos-duration="1400">
+        <div class="col-12 text-center">
+          <h3 class="faq-title">Common Eligibility Questions</h3>
+          <button class="btn btn-outline-secondary btn-lg mt-3" data-toggle="collapse" data-target="#faq-content">View FAQs</button>
+        </div>
+        <div class="col-md-8 mx-auto collapse mt-4" id="faq-content">
+          <div class="card card-body">
+            <h5>What credit score do I need?</h5>
+            <p>You typically need a credit score of 600 or higher to qualify for financing. However, this may vary based on the car model.</p>
+
+            <h5>What if I don’t have proof of income?</h5>
+            <p>If you don’t have proof of income, you may still qualify by showing other financial statements or a strong credit score.</p>
+
+            <h5>Can I apply if I have bad credit?</h5>
+            <p>Yes, we offer options for those with lower credit scores, but terms may vary. We recommend contacting our finance team for personalized assistance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- section 5 ends here -->
+
+    <!-- section 6 starts here -->
+     <!-- How to Apply Section -->
+    <div class="container my-5 apply-section" id="how-to-apply">
+      <div class="row text-center mb-4">
+        <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="section-title">How to Apply for Financing</h2>
+          <p class="lead">Follow these simple steps to get started with our financing process.</p>
+        </div>
+      </div>
+
+      <!-- Application Steps -->
+      <div class="row justify-content-center">
+        <div class="col-md-8" data-aos="fade-up" data-aos-duration="1200">
+          <ul class="timeline">
+            <li class="timeline-item">
+              <h5><i class="fas fa-car mr-3"></i>Choose Your Car</h5>
+              <p>Select your preferred car from our extensive collection of new and pre-owned vehicles.</p>
+            </li>
+            <li class="timeline-item">
+              <h5><i class="fas fa-file-alt mr-3"></i>Submit an Online Application</h5>
+              <p>Complete a quick online application form with your details and financing preferences.</p>
+            </li>
+            <li class="timeline-item">
+              <h5><i class="fas fa-check-circle mr-3"></i>Get Approved</h5>
+              <p>We will review your application and notify you of your approval status within 24 hours.</p>
+            </li>
+            <li class="timeline-item">
+              <h5><i class="fas fa-road mr-3"></i>Drive Your Car Home</h5>
+              <p>Once approved, pick up your car and drive it home with a flexible payment plan.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Apply Button -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 text-center" data-aos="fade-up" data-aos-duration="1400">
+          <a href="#" class="btn btn-primary btn-lg btn-block apply-btn">Start Financing Application</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+          // Optional: Scroll to specific section on button click
+    document.querySelector('.apply-btn').addEventListener('click', function() {
+      document.getElementById('financing-calculator').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+    </script>
+
+
+    <!-- section 6 ends here -->
+
+
+
+
+
+
+
 
 
     
