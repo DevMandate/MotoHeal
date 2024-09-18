@@ -372,6 +372,118 @@ hr{
 
     }
 
+    /* Section Styling */
+  .dealership-section {
+    padding: 50px 0;
+   
+  }
+  
+  .card-custom {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-custom:hover {
+    transform: scale(1.05);
+  }
+
+  .card-img-top {
+    border-radius: 10px 10px 0 0;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .card-body p {
+    font-size: 0.95rem;
+    color: #555;
+    text-align: center;
+  }
+
+  .btn-explore {
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-explore:hover {
+    background-color: #ff3e2d;
+  }
+
+   /* Card Custom Styling */
+   .card-custom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover Effect for Card */
+  .card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Card Header Styling */
+  .card-header {
+    background-color: #343a40;
+    color: #fff;
+  }
+
+  /* Card Footer List Styling */
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+  }
+
+  /* Price Styling */
+  .text-muted {
+    font-size: 1.1rem;
+  }
+
+  .text-danger {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Button Styling */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1.2rem;
+  }
+
+  /* AOS Animations */
+  [data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  [data-aos="fade-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .card-custom {
+      margin-bottom: 20px;
+    }
+  }
+
+  
+
 
 
     </style>
@@ -481,6 +593,351 @@ hr{
     <br />
     <!-- Section 1 ends here -->
 
+    <!-- section 2 starts here -->
+    <section class="dealership-section">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Explore Our Latest Car Deals</h2>
+        
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+            <div class="card card-custom shadow-lg border-0 rounded-lg overflow-hidden">
+              <!-- Card Header -->
+              <div class="card-header text-center bg-dark text-white py-3">
+                <h4 class="card-title">Nissan Patrol</h4> <!-- Replace with actual SUV name -->
+              </div>
+          
+              <!-- Card Body -->
+              <div class="card-body p-0">
+                <img src="images/p1.jpg" alt="Luxury SUV" class="card-img-top img-fluid">
+              </div>
+          
+              <!-- Card Footer -->
+              <div class="card-footer bg-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Make:</strong> Nissan Patrol</li> <!-- Replace with actual brand -->
+                  <li class="list-group-item"><strong>Model Year:</strong> 2024</li> <!-- Replace with actual model year -->
+                  <li class="list-group-item"><strong>Engine:</strong> V8 4.0L Turbo</li> <!-- Replace with actual engine -->
+                  <li class="list-group-item"><strong>Offer:</strong> 10% off for a limited time</li> <!-- Customize offer -->
+                  <li class="list-group-item"><strong>Fuel:</strong> Petrol</li> <!-- Replace with fuel type -->
+                  <li class="list-group-item"><strong>Drive:</strong> 4WD</li> <!-- Customize drive option -->
+                  <li class="list-group-item">
+                    <strong>Price:</strong> 
+                    <span class="text-muted"><del>$100,000</del></span> <!-- Previous price -->
+                    <span class="text-danger">$90,000</span> <!-- New offer price -->
+                  </li>
+                </ul>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div> 
+          </div>
+          
+          
+          <!-- Column 2 -->
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="450">
+            <div class="card card-custom shadow-lg border-0 rounded-lg overflow-hidden">
+              <!-- Card Header -->
+              <div class="card-header text-center bg-dark text-white py-3">
+                <h4 class="card-title">Porsche Cayenne</h4> <!-- Replace with actual SUV name -->
+              </div>
+          
+              <!-- Card Body -->
+              <div class="card-body p-0">
+                <img src="images/p4.jpg" alt="Luxury SUV" class="card-img-top img-fluid">
+              </div>
+          
+              <!-- Card Footer -->
+              <div class="card-footer bg-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Make:</strong> Porsche Cayenne</li> <!-- Replace with actual brand -->
+                  <li class="list-group-item"><strong>Model Year:</strong> 2020</li> <!-- Replace with actual model year -->
+                  <li class="list-group-item"><strong>Engine:</strong> V8 4.0L Turbo</li> <!-- Replace with actual engine -->
+                  <li class="list-group-item"><strong>Offer:</strong> 10% off for a limited time</li> <!-- Customize offer -->
+                  <li class="list-group-item"><strong>Fuel:</strong> Petrol</li> <!-- Replace with fuel type -->
+                  <li class="list-group-item"><strong>Drive:</strong> 4WD</li> <!-- Customize drive option -->
+                  <li class="list-group-item">
+                    <strong>Price:</strong> 
+                    <span class="text-muted"><del>$100,000</del></span> <!-- Previous price -->
+                    <span class="text-danger">$90,000</span> <!-- New offer price -->
+                  </li>
+                </ul>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div> 
+          </div>
+          
+          
+          <!-- Column 3 -->
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="700">
+            <div class="card card-custom shadow-lg border-0 rounded-lg overflow-hidden">
+              <!-- Card Header -->
+              <div class="card-header text-center bg-dark text-white py-3">
+                <h4 class="card-title">Nissan Patrol</h4> <!-- Replace with actual SUV name -->
+              </div>
+          
+              <!-- Card Body -->
+              <div class="card-body p-0">
+                <img src="images/p3.jpg" alt="Luxury SUV" class="card-img-top img-fluid">
+              </div>
+          
+              <!-- Card Footer -->
+              <div class="card-footer bg-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Make:</strong> Nissan Patrol</li> <!-- Replace with actual brand -->
+                  <li class="list-group-item"><strong>Model Year:</strong> 2016</li> <!-- Replace with actual model year -->
+                  <li class="list-group-item"><strong>Engine:</strong> V8 4.0L Turbo</li> <!-- Replace with actual engine -->
+                  <li class="list-group-item"><strong>Offer:</strong> 10% off for a limited time</li> <!-- Customize offer -->
+                  <li class="list-group-item"><strong>Fuel:</strong> Petrol</li> <!-- Replace with fuel type -->
+                  <li class="list-group-item"><strong>Drive:</strong> 4WD</li> <!-- Customize drive option -->
+                  <li class="list-group-item">
+                    <strong>Price:</strong> 
+                    <span class="text-muted"><del>$100,000</del></span> <!-- Previous price -->
+                    <span class="text-danger">$90,000</span> <!-- New offer price -->
+                  </li>
+                </ul>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div> 
+          </div>
+          
+          
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2 ends here -->
+
+    <!-- section 3 starts Here -->
+    <section class="preowned-section">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Discover Our Certified Pre-Owned Luxury Cars</h2>
+        
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+            <div class="card card-custom shadow-lg border-0 rounded-lg overflow-hidden">
+              <!-- Card Header -->
+              <div class="card-header text-center bg-dark text-white py-3">
+                <h4 class="card-title">BMW X5</h4>
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body p-0">
+                <img src="images/bmwx5.jpg" alt="Pre-Owned BMW X5" class="card-img-top img-fluid">
+              </div>
+    
+              <!-- Card Footer -->
+              <div class="card-footer bg-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Make:</strong> BMW X5</li>
+                  <li class="list-group-item"><strong>Model Year:</strong> 2018</li>
+                  <li class="list-group-item"><strong>Engine:</strong> 3.0L V6 Turbo</li>
+                  <li class="list-group-item"><strong>Offer:</strong> Special financing options available</li>
+                  <li class="list-group-item"><strong>Fuel:</strong> Diesel</li>
+                  <li class="list-group-item"><strong>Drive:</strong> AWD</li>
+                  <li class="list-group-item">
+                    <strong>Price:</strong>
+                    <span class="text-muted"><del>$75,000</del></span>
+                    <span class="text-danger">$68,000</span>
+                  </li>
+                </ul>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Column 2 -->
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="450">
+            <div class="card card-custom shadow-lg border-0 rounded-lg overflow-hidden">
+              <!-- Card Header -->
+              <div class="card-header text-center bg-dark text-white py-3">
+                <h4 class="card-title">Audi Q7</h4>
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body p-0">
+                <img src="images/Q7.jpg" alt="Pre-Owned Audi Q7" class="card-img-top img-fluid">
+              </div>
+    
+              <!-- Card Footer -->
+              <div class="card-footer bg-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Make:</strong> Audi Q7</li>
+                  <li class="list-group-item"><strong>Model Year:</strong> 2017</li>
+                  <li class="list-group-item"><strong>Engine:</strong> 3.0L V6 Turbo</li>
+                  <li class="list-group-item"><strong>Offer:</strong> Extended warranty available</li>
+                  <li class="list-group-item"><strong>Fuel:</strong> Petrol</li>
+                  <li class="list-group-item"><strong>Drive:</strong> AWD</li>
+                  <li class="list-group-item">
+                    <strong>Price:</strong>
+                    <span class="text-muted"><del>$70,000</del></span>
+                    <span class="text-danger">$63,000</span>
+                  </li>
+                </ul>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Column 3 -->
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="700">
+            <div class="card card-custom shadow-lg border-0 rounded-lg overflow-hidden">
+              <!-- Card Header -->
+              <div class="card-header text-center bg-dark text-white py-3">
+                <h4 class="card-title">Land Rover Discovery</h4>
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body p-0">
+                <img src="images/Discovery.jpg" alt="Pre-Owned Land Rover Discovery" class="card-img-top img-fluid">
+              </div>
+    
+              <!-- Card Footer -->
+              <div class="card-footer bg-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Make:</strong> Land Rover Discovery</li>
+                  <li class="list-group-item"><strong>Model Year:</strong> 2019</li>
+                  <li class="list-group-item"><strong>Engine:</strong> 3.0L V6</li>
+                  <li class="list-group-item"><strong>Offer:</strong> No down payment required</li>
+                  <li class="list-group-item"><strong>Fuel:</strong> Diesel</li>
+                  <li class="list-group-item"><strong>Drive:</strong> 4WD</li>
+                  <li class="list-group-item">
+                    <strong>Price:</strong>
+                    <span class="text-muted"><del>$80,000</del></span>
+                    <span class="text-danger">$75,000</span>
+                  </li>
+                </ul>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
+
+    <!-- section 3 ends here   -->
+
+    <!-- section 4 starts here -->
+    <section class="lease-section">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Exclusive Lease and Rental Offers</h2>
+
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+            <div class="card card-custom shadow-lg border-0 rounded-lg overflow-hidden">
+              <!-- Card Header -->
+              <div class="card-header text-center bg-dark text-white py-3">
+                <h4 class="card-title">Tesla Model X</h4>
+              </div>
+
+              <!-- Card Body -->
+              <div class="card-body p-0">
+                <img src="images/teslax.jpg" alt="Tesla Model X" class="card-img-top img-fluid">
+              </div>
+
+              <!-- Card Footer -->
+              <div class="card-footer bg-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Make:</strong> Tesla Model X</li>
+                  <li class="list-group-item"><strong>Lease Term:</strong> 36 Months</li>
+                  <li class="list-group-item"><strong>Monthly Payment:</strong> $1,200/month</li>
+                  <li class="list-group-item"><strong>Down Payment:</strong> $5,000</li>
+                  <li class="list-group-item"><strong>Mileage Allowance:</strong> 12,000 miles/year</li>
+                  <li class="list-group-item"><strong>Offer:</strong> Special weekend rates available for rentals</li>
+                </ul>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart"></i> Lease Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="450">
+            <div class="card card-custom shadow-lg border-0 rounded-lg overflow-hidden">
+              <!-- Card Header -->
+              <div class="card-header text-center bg-dark text-white py-3">
+                <h4 class="card-title">Mercedes-Benz GLE</h4>
+              </div>
+
+              <!-- Card Body -->
+              <div class="card-body p-0">
+                <img src="images/GLE.jpg" alt="Mercedes-Benz GLE" class="card-img-top img-fluid">
+              </div>
+
+              <!-- Card Footer -->
+              <div class="card-footer bg-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Make:</strong> Mercedes-Benz GLE</li>
+                  <li class="list-group-item"><strong>Lease Term:</strong> 24 Months</li>
+                  <li class="list-group-item"><strong>Monthly Payment:</strong> $1,000/month</li>
+                  <li class="list-group-item"><strong>Down Payment:</strong> $4,500</li>
+                  <li class="list-group-item"><strong>Mileage Allowance:</strong> 10,000 miles/year</li>
+                  <li class="list-group-item"><strong>Offer:</strong> No down payment for weekend rentals</li>
+                </ul>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart"></i> Lease Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="700">
+            <div class="card card-custom shadow-lg border-0 rounded-lg overflow-hidden">
+              <!-- Card Header -->
+              <div class="card-header text-center bg-dark text-white py-3">
+                <h4 class="card-title">Range Rover Velar</h4>
+              </div>
+
+              <!-- Card Body -->
+              <div class="card-body p-0">
+                <img src="images/Velar.jpg" alt="Range Rover Velar" class="card-img-top img-fluid">
+              </div>
+
+              <!-- Card Footer -->
+              <div class="card-footer bg-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Make:</strong> Range Rover Velar</li>
+                  <li class="list-group-item"><strong>Lease Term:</strong> 12 Months</li>
+                  <li class="list-group-item"><strong>Monthly Payment:</strong> $1,500/month</li>
+                  <li class="list-group-item"><strong>Down Payment:</strong> $3,000</li>
+                  <li class="list-group-item"><strong>Mileage Allowance:</strong> 15,000 miles/year</li>
+                  <li class="list-group-item"><strong>Offer:</strong> Special weekend rental rates available</li>
+                </ul>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart"></i> Lease Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- section 4 ends here -->
+
+
+    
+
+
+
 
     
 
@@ -549,6 +1006,35 @@ hr{
 
 
 <!-- Footer ends here -->
+
+
+<!-- js for product gallery -->
+<script>
+  var productimg = document.getElementById("productimg")
+  var smallimg = document.getElementsByClassName("small-img")
+
+  smallimg[0].onclick = function()
+  {
+      productimg.src = smallimg[0].src;
+  }
+
+  smallimg[1].onclick = function()
+  {
+      productimg.src = smallimg[1].src;
+  }
+
+  smallimg[2].onclick = function()
+  {
+      productimg.src = smallimg[2].src;
+  }
+
+  smallimg[3].onclick = function()
+  {
+      productimg.src = smallimg[3].src;
+  }
+
+
+</script>
 
 
 
