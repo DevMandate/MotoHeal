@@ -372,6 +372,313 @@ hr{
 
     }
 
+    /* Insurance Header Section Styling */
+.insurance-header-section {
+  background-image: url('path-to-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.insurance-header-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+  z-index: -1;
+}
+
+.insurance-header-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.insurance-header-section p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.insurance-header-section .btn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.insurance-header-section .btn:hover {
+  transform: scale(1.05);
+}
+
+.insurance-header-section .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.insurance-header-section .btn-outline-light {
+  border-color: white;
+}
+
+.insurance-header-section .btn-outline-light:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+/* Insurance Overview Section Styling */
+.insurance-overview {
+  background-color: #f8f9fa;
+}
+
+.insurance-overview h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.insurance-overview p {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #6c757d;
+}
+
+.insurance-overview .card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.insurance-overview .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.insurance-overview .card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.insurance-overview .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.insurance-overview .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.insurance-overview .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Insurance Benefits Section Styling */
+.insurance-benefits {
+  background-color: #ffffff;
+}
+
+.insurance-benefits h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.insurance-benefits p {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #6c757d;
+}
+
+.benefit-item {
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  background-color: #007bff;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.benefit-icon i {
+  font-size: 2rem;
+}
+
+.benefit-item h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-item p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Insurance Calculator Section Styling */
+.insurance-calculator {
+  background-color: #e0e0e0;
+}
+
+.insurance-calculator h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.insurance-calculator p {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #6c757d;
+}
+
+#insurance-form {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#insurance-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  transition: opacity 0.3s ease-in-out;
+}
+
+#result.show {
+  opacity: 1;
+}
+
+/* Insurance Eligibility and How to Apply Section Styling */
+.insurance-eligibility {
+  background-color: #e0e0e0;
+}
+
+.insurance-eligibility h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.insurance-eligibility p {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #6c757d;
+}
+
+.insurance-eligibility h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.insurance-eligibility ul,
+.insurance-eligibility ol {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.insurance-eligibility ul li,
+.insurance-eligibility ol li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.insurance-eligibility ul li i,
+.insurance-eligibility ol li i {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* FAQs and Claims Process Overview Section Styling */
+.insurance-faqs {
+  background-color: #f8f9fa;
+  padding-bottom: 3rem;
+}
+
+.insurance-faqs h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.insurance-faqs p {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #6c757d;
+}
+
+.insurance-faqs h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.insurance-faqs .accordion .card {
+  margin-bottom: 1rem;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.insurance-faqs .accordion .card-header {
+  background-color: #ffffff;
+  border: none;
+}
+
+.insurance-faqs .accordion .card-header h5 {
+  margin: 0;
+}
+
+.insurance-faqs .accordion .card-body {
+  background-color: #ffffff;
+  border-top: 1px solid #dee2e6;
+}
+
+.insurance-faqs ol {
+  margin-top: 1.5rem;
+}
+
+.insurance-faqs ol li {
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
 
 
     </style>
@@ -390,13 +697,13 @@ hr{
               <i class="fas fa-clock"></i> Office Hours: 8 am - 5 pm Daily
             </span>
             <span>
-              <i class="fas fa-phone-alt"></i> 0727 200 200, 0798 500 000
+              <i class="fas fa-phone-alt"></i>0796 578 077, 0725 429 723
             </span>
           </div>
 
           <!-- Center: Email info -->
           <div>
-            <span> <i class="fas fa-envelope"></i> info@motorhub.co.ke </span>
+            <span> <i class="fas fa-envelope"></i> info@motorheal.co.ke </span>
           </div>
 
           <!-- Right side: Wishlist and additional buttons -->
@@ -480,6 +787,410 @@ hr{
     </section>
     <br />
     <!-- Section 1 ends here -->
+
+    <!-- section 2 starts here -->
+        <!-- Header Section -->
+    <header class="insurance-header-section py-5 text-white" id="insurance-header">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <!-- Title -->
+          <div class="col-md-8" data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="display-4">Comprehensive Insurance Solutions for Your Vehicle</h1>
+            <p class="lead mt-3">Protect your car with the right insurance plan.</p>
+          </div>
+          
+          <!-- CTA Buttons -->
+          <div class="col-md-6 mt-4" data-aos="fade-up" data-aos-duration="1200">
+            <a href="#get-quote" class="btn btn-lg btn-primary px-5 mr-3 shadow">Get an Insurance Quote</a> <br> <br>
+            <a href="#explore-plans" class="btn btn-lg btn-outline-light px-5 shadow">Explore Insurance Plans</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- section 2 ends here  -->
+
+    <!-- section 3 starts here  -->
+     <!-- Overview of Insurance Options Section -->
+    <section class="insurance-overview py-5" id="insurance-overview">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <!-- Section Title -->
+          <div class="col-lg-8" data-aos="fade-down">
+            <h2 class="display-5">Explore Your Insurance Options</h2>
+            <p class="lead mt-3">Choose the right coverage that suits your vehicle and personal needs.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Insurance Option 1: Comprehensive Insurance -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Comprehensive Insurance</h5>
+                <p class="card-text">Complete coverage for damage, theft, and accidents, giving you peace of mind on the road.</p>
+                <a href="#comprehensive" class="btn btn-outline-primary mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Insurance Option 2: Third-Party Insurance -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Third-Party Insurance</h5>
+                <p class="card-text">Covers damages to other vehicles or property in an accident where you are at fault.</p>
+                <a href="#third-party" class="btn btn-outline-primary mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Insurance Option 3: Personal Accident Cover -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Personal Accident Cover</h5>
+                <p class="card-text">Provides financial protection in case of injury or fatality due to a road accident.</p>
+                <a href="#personal-accident" class="btn btn-outline-primary mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Insurance Option 4: Theft and Fire Coverage -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Theft and Fire Coverage</h5>
+                <p class="card-text">Covers your vehicle in case of theft, fire, or natural disasters.</p>
+                <a href="#theft-fire" class="btn btn-outline-primary mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Insurance Option 5: Gap Insurance -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="1000">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Gap Insurance</h5>
+                <p class="card-text">Covers the difference between your car's value and what you owe on your car loan.</p>
+                <a href="#gap-insurance" class="btn btn-outline-primary mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 ends here  -->
+
+    <!-- section 4 starts here -->
+     <!-- Benefits of Insurance Section -->
+    <section class="insurance-benefits py-5" id="insurance-benefits">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <!-- Section Title -->
+          <div class="col-lg-8" data-aos="fade-down">
+            <h2 class="display-5">Benefits of Insuring Your Car</h2>
+            <p class="lead mt-3">Discover why having car insurance is essential for your peace of mind and financial security.</p>
+          </div>
+        </div>
+
+        <!-- Benefits List with Icons -->
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="benefit-item">
+              <div class="benefit-icon mb-3">
+                <i class="fas fa-car-crash fa-3x"></i>
+              </div>
+              <h4>Financial Protection</h4>
+              <p class="text-muted">Coverage for accidents and unforeseen events.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="benefit-item">
+              <div class="benefit-icon mb-3">
+                <i class="fas fa-shield-alt fa-3x"></i>
+              </div>
+              <h4>Comprehensive Coverage</h4>
+              <p class="text-muted">Protection against theft, fire, and natural disasters.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="benefit-item">
+              <div class="benefit-icon mb-3">
+                <i class="fas fa-tools fa-3x"></i>
+              </div>
+              <h4>Accident Repair</h4>
+              <p class="text-muted">Peace of mind with repair and damage coverage.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="benefit-item">
+              <div class="benefit-icon mb-3">
+                <i class="fas fa-gavel fa-3x"></i>
+              </div>
+              <h4>Legal Protection</h4>
+              <p class="text-muted">Legal coverage with third-party protection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- section 4 ends here  -->
+
+    <!-- section 5 starts here -->
+     <!-- Insurance Calculator Section -->
+    <section class="insurance-calculator py-5" id="insurance-calculator">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <!-- Section Title -->
+          <div class="col-lg-8" data-aos="fade-down">
+            <h2 class="display-5">Calculate Your Insurance Premium</h2>
+            <p class="lead mt-3">Get an estimate based on your car details and personal information.</p>
+          </div>
+        </div>
+
+        <!-- Calculator Form -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form id="insurance-form" class="bg-light p-4 rounded shadow-sm" data-aos="fade-up">
+
+              <!-- Car Details Section -->
+              <h3 class="mb-4">Car Details</h3>
+              <div class="form-group">
+                <label for="carModel">Car Model</label>
+                <input type="text" class="form-control" id="carModel" name="carModel" required>
+              </div>
+              <div class="form-group">
+                <label for="carAge">Car Age</label>
+                <input type="number" class="form-control" id="carAge" name="carAge" required>
+              </div>
+              <div class="form-group">
+                <label for="carUsage">Car Usage (e.g., daily commute, occasional)</label>
+                <input type="text" class="form-control" id="carUsage" name="carUsage" required>
+              </div>
+
+              <!-- Personal Information Section -->
+              <h3 class="mt-5 mb-4">Personal Information</h3>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+              </div>
+              <div class="form-group">
+                <label for="drivingHistory">Driving History</label>
+                <textarea class="form-control" id="drivingHistory" name="drivingHistory" rows="3" required></textarea>
+              </div>
+
+              <!-- Calculate Button -->
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary btn-lg">Calculate Your Premium</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Result Display Area -->
+        <div class="row mt-5">
+          <div class="col-lg-8 offset-lg-2">
+            <div id="result" class="bg-light p-4 rounded shadow-sm text-center" style="display: none;">
+              <h3 class="mb-4">Estimated Premium:</h3>
+              <p id="premiumResult" class="display-4 text-primary mb-0">$0</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+          // JavaScript for Insurance Calculator Section
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('insurance-form');
+      const resultDiv = document.getElementById('result');
+      const resultText = document.getElementById('premiumResult');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Calculate premium (dummy calculation)
+        const carModel = form.carModel.value;
+        const carAge = parseInt(form.carAge.value);
+        const carUsage = form.carUsage.value;
+        const age = parseInt(form.age.value);
+        const drivingHistory = form.drivingHistory.value;
+
+        // Dummy premium calculation (replace with actual logic)
+        const premium = Math.floor(Math.random() * 200 + 100);
+
+        // Display result
+        resultText.textContent = `$${premium}`;
+        resultDiv.classList.add('show');
+      });
+    });
+
+    </script>
+
+    <!-- section 5 ends here -->
+
+    <!-- section 6 starts here  -->
+     <!-- Eligibility Requirements and How to Apply Section -->
+    <section class="insurance-eligibility py-5" id="insurance-eligibility">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <!-- Section Title -->
+          <div class="col-lg-8" data-aos="fade-down">
+            <h2 class="display-5">Insurance Eligibility and Application</h2>
+            <p class="lead mt-3">Understand the requirements and steps to insure your vehicle.</p>
+          </div>
+        </div>
+
+        <!-- Eligibility Requirements -->
+        <div class="row mb-5">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3>Eligibility Requirements</h3>
+            <ul class="list-unstyled text-dark">
+              <li><i class="fas fa-check-circle text-primary"></i> <b class="text-dark">Age requirement (usually 18 years or older)</b></li>
+              <li><i class="fas fa-check-circle text-primary"></i> <b class="text-dark">Valid driving license</b></li>
+              <li><i class="fas fa-check-circle text-primary"></i> <b class="text-dark">Acceptable driving history</b></li>
+              <li><i class="fas fa-check-circle text-primary"></i> <b class="text-dark">Any special conditions (e.g., credit score)</b></li>
+            </ul>
+          </div>
+
+          <!-- How to Apply Section -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3>How to Apply for Insurance</h3>
+            <ol><b>
+              <li>Choose your insurance plan.</li>
+              <li>Enter car and personal details.</li>
+              <li>Get a premium quote.</li>
+              <li>Complete the application process.</li>
+              <li>Drive with peace of mind.</li></b>
+            </ol>
+            <div class="text-center mt-4">
+              <a href="#" class="btn btn-primary btn-lg">Start Insurance Application</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- section 6 ends here -->
+
+    <!-- section 7 starts here  -->
+     <!-- FAQs and Claims Process Overview Section -->
+    <section class="insurance-faqs py-5" id="insurance-faqs">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <!-- Section Title -->
+          <div class="col-lg-8" data-aos="fade-down">
+            <h2 class="display-5">Insurance FAQs and Claims Process</h2>
+            <p class="lead mt-3">Answers to common questions and how to file an insurance claim.</p>
+          </div>
+        </div>
+
+        <!-- FAQs Section -->
+        <div class="row mb-5">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3>Frequently Asked Questions</h3>
+            <div class="accordion" id="faqAccordion">
+              <!-- FAQ Item 1 -->
+              <div class="card">
+                <div class="card-header" id="faqHeading1">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                      What is covered under comprehensive insurance?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    Comprehensive insurance typically covers damage caused by accidents, theft, fire, vandalism, and natural disasters.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="card">
+                <div class="card-header" id="faqHeading2">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                      How do I file a claim?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    To file a claim, contact our customer support at [Phone Number] or visit our claims department. Provide necessary details and documents related to the incident.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="card">
+                <div class="card-header" id="faqHeading3">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                      What is the difference between third-party and comprehensive insurance?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    Third-party insurance covers damage caused to others (third parties) by your vehicle. Comprehensive insurance covers damage to your vehicle as well as third-party damage.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Claims Process Overview Section -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3>Claims Process Overview</h3>
+            <p>Learn how to file an insurance claim in case of an accident or damage.</p>
+            <ol>
+              <li>Contact our customer support or visit our claims department.</li>
+              <li>Provide details of the incident and necessary documents.</li>
+              <li>Our team will assess the claim and provide guidance on the next steps.</li>
+              <li>Once approved, necessary repairs or compensation will be arranged.</li>
+            </ol>
+            <div class="text-center mt-4">
+              <a href="#" class="btn btn-primary btn-lg">File a Claim</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+          // JavaScript for FAQ Accordion
+    $(document).ready(function() {
+      $('.accordion .collapse').on('show.bs.collapse', function() {
+        $(this).prev('.card-header').addClass('active');
+      });
+
+      $('.accordion .collapse').on('hide.bs.collapse', function() {
+        $(this).prev('.card-header').removeClass('active');
+      });
+    });
+    </script>
+
+
+
+    <!-- section 7 ends here -->
+
+
+
 
 
     
