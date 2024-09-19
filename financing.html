@@ -34,6 +34,18 @@
       img {
         transition: 1s;
       }
+
+       /* Ensure no overflow */
+       .form-container {
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .navbar-brand img {
+        max-width: 100%;
+        height: auto;
+      }
+
       .white-effect {
         filter: invert(100%) brightness(300%);
       }
@@ -647,6 +659,95 @@ hr{
   transform: scale(1.05);
 }
 
+/* Form Container Styling for Register and Login */
+.form-container {
+        position: relative;
+        width: 400px;
+        border-radius: 15px;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      /* Close Button Styling */
+      .close-btn {
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      /* Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Hide and Show for Form Section */
+      #form-section.d-none {
+        display: none;
+      }
+
+      #form-section.d-block {
+        display: block;
+      }
+
+            /* Offcanvas Styling */
+      .offcanvas-header {
+        background-color: #f8f9fa;
+        border-bottom: 2px solid #dee2e6;
+      }
+
+      .offcanvas-body {
+        padding: 1.5rem;
+        animation: fadeIn 0.8s ease-in-out;
+      }
+
+      .offcanvas-section {
+        padding: 1rem;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .offcanvas-section h4 {
+        font-weight: 600;
+      }
+
+      .offcanvas-section p {
+        color: #6c757d;
+      }
+
+      /* Accordion Styling */
+      .accordion-button {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      .accordion-button.collapsed {
+        background-color: #28a745;
+      }
+
+      .accordion-body {
+        background-color: #e9ecef;
+        padding: 1rem;
+        border-radius: 5px;
+      }
+
+      /* Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
 
 
 
@@ -654,105 +755,277 @@ hr{
     </style>
   </head>
   <body>
-    <!-- Section 1 starts here -->
-    <section class="row">
+     <!-- Section 1 starts here -->
+     <section class="row">
       <div class="col-md-12">
-        <!-- Top Row: Additional info (Office hours, contact, email, etc.) -->
-        <div
-          class="d-flex justify-content-between align-items-center bg-light p-2"
-        >
-          <!-- Left side: Office hours and contact details -->
-          <div class="d-flex align-items-center">
-            <span class="me-3">
-              <i class="fas fa-clock"></i> Office Hours: 8 am - 5 pm Daily
-            </span>
-            <span>
-              <i class="fas fa-phone-alt"></i> 0796 578 077, 0725 429 723
-            </span>
-          </div>
-
-          <!-- Center: Email info -->
-          <div>
-            <span> <i class="fas fa-envelope"></i> info@motorheal.co.ke </span>
-          </div>
-
-          <!-- Right side: Wishlist and additional buttons -->
-          <div class="d-flex align-items-center">
-            <span class="me-3">
-              <a href="#" class="text-dark"
-                ><i class="fas fa-heart"></i> Wishlist</a
-              >
-            </span>
-
-            <!-- Creative Idea 1: Trade-in option -->
-            <span class="btn btn-danger me-2">Trade In</span>
-
-            <!-- Creative Idea 2: Financing option -->
-            <span class="btn btn-dark me-2">Financing</span>
-
-            <!-- Service Center Option -->
-            <span class="btn btn-danger">Service Center</span>
-          </div>
-        </div>
-
-        <!-- Bottom Row: Main Navbar -->
+        <!-- Main Navbar -->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
-          <div
-            class="container-fluid d-flex justify-content-between align-items-center"
-          >
-            <!-- Navbar links on the left -->
-            <div class="collapse navbar-collapse" id="items">
-              <div class="navbar-nav">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="accessories.html" class="nav-link">Accessories</a>
-                <a href="maintenance.html" class="nav-link">Maintenance</a>
-                <a href="dealership.html" class="nav-link">Dealership</a>
-                <a href="blog.html" class="nav-link">Blog</a>
-                <a href="contact.html" class="nav-link">Contact Us</a>
-
-                <!-- Dropdown menu for 'See more' -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="dropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    See more
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item active" href="promotion.html">Promotion</a></li>
-                    <li><a class="dropdown-item" href="financing.html">Financing</a></li>
-                    <li><a class="dropdown-item" href="insurance.html">Insurance</a></li>
-                  </ul>
-                </li>
+          <div class="container-fluid d-flex justify-content-between align-items-center">
+            
+            <!-- Left Side: Navbar links -->
+            <div class="d-flex">
+              <button type="button" class="btn btn-outline-success me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                <i class="fa-solid fa-angles-right"></i>
+              </button>
+              
+              <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="accessories.html" class="nav-link">Accessories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="maintenance.html" class="nav-link">Maintenance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="dealership.html" class="nav-link">Dealership</a>
+                  </li>
+                  
+                  <!-- Dropdown menu for 'See more' -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="dropdownMenuLink"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      See more
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="promotion.html">Promotion</a></li>
+                      <li><a class="dropdown-item active" href="financing.html">Financing</a></li>
+                      <li><a class="dropdown-item" href="insurance.html">Insurance</a></li>
+                      <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                      <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <!-- MotoHeal Logo centered -->
-            <a href="#" class="navbar-brand mx-auto">
-              <img
-                src="images/MotoHeal Logo.PNG"
-                alt="MotoHeal Logo"
-                width="200px"
-              />
-            </a>
+            <!-- Centered: MotoHeal Logo -->
+            <div class="mx-auto">
+              <a href="#" class="navbar-brand">
+                <img
+                  src="images/MotoHeal Logo.PNG"
+                  alt="MotoHeal Logo"
+                  width="200px"
+                  class="mx-auto"
+                />
+              </a>
+            </div>
 
-            <!-- Right side: Login and Register buttons -->
-            <div class="navbar-nav ms-auto">
-              <a href="" class="nav-button btn btn-outline-success m-2"
-                >Login</a
-              >
-              <a
-                href=""
-                class="nav-button btn btn-outline-info m-2 text-success"
-                >Register</a
-              >
+            <!-- Right Side: Login and Register buttons -->
+            <div class="d-flex">
+              <a href="#" class="nav-button btn btn-outline-success me-2" id="login-btn">Login</a>
+              <a href="#" class="nav-button btn btn-outline-info text-success" id="register-btn">Register</a>
             </div>
           </div>
+
+          <!-- Form Section (for login/register forms) -->
+          <div id="form-section" class="position-fixed w-100 h-100 d-none" style="top: 0; left: 0; background-color: rgba(0,0,0,0.7); z-index: 1000;">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div id="login-form" class="form-container p-4 bg-light shadow-lg aos-init aos-animate" data-aos="fade-down">
+                <button id="close-btn" class="close-btn btn btn-danger btn-sm position-absolute top-0 end-0 m-2"><i class="fas fa-times"></i></button>
+                <h3 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i> Login</h3>
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+              </div>
+
+              <div id="register-form" class="form-container p-4 bg-light shadow-lg aos-init aos-animate d-none" data-aos="fade-down">
+                <button id="close-btn-register" class="close-btn btn btn-danger btn-sm position-absolute top-0 end-0 m-2"><i class="fas fa-times"></i></button>
+                <h3 class="text-center mb-3"><i class="fas fa-user-plus"></i> Register</h3>
+                <form>
+                  <div class="mb-3">
+                    <label for="reg-email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="reg-email" placeholder="Enter email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="reg-password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="reg-password" placeholder="Enter password" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirm-password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password" required>
+                  </div>
+                  <button type="submit" class="btn btn-success w-100">Register</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
         </nav>
+
+        <!-- Offcanvas starts here -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h4 class="offcanvas-title" id="offcanvasExampleLabel">MotoHeal Information</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            
+              <div class="offcanvas-body">
+                <div class="offcanvas-section" data-aos="fade-right">
+                  <h4>Exclusive Deals</h4>
+                  <p>Discover our latest offers on car accessories and services.</p>
+                  <a href="#" class="btn btn-outline-info btn-sm">View Deals</a>
+                </div>
+            
+                <div class="offcanvas-section mt-4" data-aos="fade-right">
+                  <h4>Our Services</h4>
+                  <p>From maintenance to customization, we have it all.</p>
+                  <a href="#" class="btn btn-outline-success btn-sm">Explore Services</a>
+                </div>
+            
+                <hr class="mt-4 mb-4">
+
+              <!-- Accordion Starts Here -->
+              <div class="accordion" id="motoheal-sections">
+                <div class="accordion-item">
+                  <!-- Accordion header 1 -->
+                  <h2 class="accordion-header" id="heading-1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#section-1" aria-expanded="true" aria-controls="section-1">
+                      Section 1 - MotoHeal Services
+                    </button>
+                  </h2>
+
+                  <!-- Accordion content 1 -->
+                  <div id="section-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#motoheal-sections">
+                    <div class="accordion-body">
+                      <p>At MotoHeal, we offer a wide range of automotive services to keep your car running smoothly. From engine repair to tire replacement, our expert technicians are here to provide top-notch maintenance and repair services.</p>
+                      <p>Our services also include car customization and enhancements, ensuring your vehicle performs at its best while looking great.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <!-- Accordion header 2 -->
+                  <h2 class="accordion-header" id="heading-2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#section-2" aria-expanded="false" aria-controls="section-2">
+                      Section 2 - Exclusive Deals
+                    </button>
+                  </h2>
+
+                  <!-- Accordion content 2-->
+                  <div id="section-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#motoheal-sections">
+                    <div class="accordion-body">
+                      <p>Discover the latest deals at MotoHeal! From discounted maintenance packages to special offers on car accessories, you’ll find unbeatable prices on services that keep your car in top condition.</p>
+                      <p>Take advantage of our limited-time offers on new arrivals and best-selling products. Upgrade your ride today!</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <!-- Accordion header 3 -->
+                  <h2 class="accordion-header" id="heading-3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#section-3" aria-expanded="false" aria-controls="section-3">
+                      Section 3 - Customer Testimonials
+                    </button>
+                  </h2>
+
+                  <!-- Accordion content 3 -->
+                  <div id="section-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#motoheal-sections">
+                    <div class="accordion-body">
+                      <p>See what our customers have to say about MotoHeal. We pride ourselves on delivering exceptional service, and our clients have expressed their satisfaction with our work.</p>
+                      <p>Read reviews from satisfied car owners who have experienced the quality and efficiency of MotoHeal's automotive services.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <!-- Accordion header 4-->
+                  <h2 class="accordion-header" id="heading-4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#section-4" aria-expanded="false" aria-controls="section-4">
+                      Section 4 - Contact Us
+                    </button>
+                  </h2>
+
+                  <!-- Accordion content 4 -->
+                  <div id="section-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#motoheal-sections">
+                    <div class="accordion-body">
+                      <p>Have questions or need assistance? Reach out to MotoHeal for expert advice and customer support. Our team is here to help you with any inquiries regarding our services, products, or appointments.</p>
+                      <p>Contact us today to schedule a service or learn more about how MotoHeal can help you take care of your vehicle.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Ends Here -->
+
+
+
+              
+            </div>
+          </div>
+
+        <!-- Offcanvas ends here -->
+
+
+
+
+        
+        
+
+        
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            // Elements
+            const loginBtn = document.getElementById('login-btn');
+            const registerBtn = document.getElementById('register-btn');
+            const formSection = document.getElementById('form-section');
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const closeBtnLogin = document.getElementById('close-btn');
+            const closeBtnRegister = document.getElementById('close-btn-register');
+        
+            // Show Login Form
+            loginBtn.addEventListener('click', (e) => {
+              e.preventDefault();
+              formSection.classList.remove('d-none');
+              loginForm.classList.remove('d-none');
+              registerForm.classList.add('d-none');
+            });
+        
+            // Show Register Form
+            registerBtn.addEventListener('click', (e) => {
+              e.preventDefault();
+              formSection.classList.remove('d-none');
+              registerForm.classList.remove('d-none');
+              loginForm.classList.add('d-none');
+            });
+        
+            // Close Forms
+            closeBtnLogin.addEventListener('click', () => {
+              formSection.classList.add('d-none');
+            });
+        
+            closeBtnRegister.addEventListener('click', () => {
+              formSection.classList.add('d-none');
+            });
+          });
+        </script>
+        
+
+
+
       </div>
     </section>
     <br />
