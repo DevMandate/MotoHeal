@@ -387,44 +387,42 @@
       }
 
       /* testimonial */
-
       .testimonial {
-        padding-top: 100px;
-      }
-
-      .testimonial .col-3 {
-        text-align: center;
-        padding: 40px 20px;
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        transition: transform 0.5s;
-      }
-
-      .testimonial .col-3 img {
-        width: 50px;
-        margin-top: 20px;
+        padding: 20px;
+        background-color: #f9f9f9; /* Optional background color */
+    }
+    .small-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: space-between; /* Space between items */
+    }
+    .col-3 {
+        flex: 1 1 30%; /* Adjust flex properties */
+        margin: 15px; /* Margin between items */
+        text-align: center; /* Center align text */
+        min-width: 250px; /* Minimum width to prevent items from getting too small */
+    }
+    .rating i {
+        color: gold; /* Star color */
+    }
+    .test_img{
+        max-width: 20%; /* Ensure images are responsive */
         border-radius: 50%;
-      }
+        height: auto; /* Maintain aspect ratio */
+    }
 
-      .testimonial .col-3:hover {
-        transform: translateY(-10px);
-      }
+    @media (max-width: 768px) {
+        .col-3 {
+            flex: 1 1 100%; /* Full width on smaller screens */
+            margin: 10px 0; /* Adjust margin for smaller screens */
+        }
+    }
 
-      .fa.fa-quote-left {
-        font-size: 34px;
-        color: #ff523b;
-      }
-      .col-3 p {
-        font-size: 12px;
-        margin: 12px 0;
-        color: #777;
-      }
-
-      .testimonial .col-3 h3 {
-        font-weight: 600;
-        color: #555;
-        font-size: 16px;
-      }
+     
 
       /* Counter styling */
       .counter-box {
@@ -1883,63 +1881,55 @@
 
     <!-- section 7 ends here -->
 
-    <!-- testimonial -->
+    <!-- Testimonial -->
     <div class="testimonial">
       <div class="small-container">
-        <div class="row">
-          <div class="col-3" data-aos="fade-up" data-aos-duration="3000">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-              commodi id recusandae voluptatem, quo quaerat?
-            </p>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="images/test4.webp" alt="" />
-            <h3>Sean Claudia</h3>
+          <div class="row">
+              <div class="col-3" data-aos="fade-up" data-aos-duration="3000">
+                  <i class="fa fa-quote-left"></i>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea commodi id recusandae voluptatem, quo quaerat?</p>
+                  <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                  </div>
+                  <img class="test_img" src="images/test4.webp" alt="" />
+                  <h3>Sean Claudia</h3>
+              </div>
+  
+              <div class="col-3" data-aos="fade-up" data-aos-duration="3000">
+                  <i class="fa fa-quote-left"></i>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea commodi id recusandae voluptatem, quo quaerat?</p>
+                  <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                  </div>
+                  <img class="test_img" src="images/test2.jpg" alt="" />
+                  <h3>Partel Cart</h3>
+              </div>
+  
+              <div class="col-3" data-aos="fade-up" data-aos-duration="3000">
+                  <i class="fa fa-quote-left"></i>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea commodi id recusandae voluptatem, quo quaerat?</p>
+                  <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                  </div>
+                  <img class="test_img" src="images/test3.jfif" alt="" />
+                  <h3>Youss Amina</h3>
+              </div>
           </div>
-
-          <div class="col-3" data-aos="fade-up" data-aos-duration="3000">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-              commodi id recusandae voluptatem, quo quaerat?
-            </p>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="images/test2.jpg" alt="" />
-            <h3>Partel Cart</h3>
-          </div>
-
-          <div class="col-3" data-aos="fade-up" data-aos-duration="3000">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-              commodi id recusandae voluptatem, quo quaerat?
-            </p>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="images/test3.jfif" alt="" />
-            <h3>Youss Amina</h3>
-          </div>
-        </div>
       </div>
     </div>
+   
 
     <!-- brands -->
     <div class="brands">
@@ -2119,18 +2109,29 @@
         </div>
 
         <div class="col">
-          <h3>
-            Links
-            <div class="underline"><span></span></div>
-          </h3>
-          <ul>
-            <li><a href="index.html"></a> Home</li>
-            <li><a href="accessories.html"></a> Accessories</li>
-            <li><a href="maintenance.html"></a> Maintenance</li>
-            <li><a href="dealership.html"></a> Dealership</li>
-            <li><a href="contact.html"></a> Contact Us</li>
+          <h3>Links <div class="underline"><span></span></div></h3>
+          <ul style="font-size: 10px; list-style-type: none; padding: 0; margin: 0;">
+              <li class="btn" style="font-weight: bold; color: white; text-decoration: none; display: block;">
+                  <a href="index.html" style="color: white; text-decoration: none; font-size: 10px;">Home</a>
+              </li>
+              <li class="btn" style="font-weight: bold; color: white; text-decoration: none; display: block;">
+                  <a href="accessories.html" style="color: white; text-decoration: none; font-size: 10px;">Accessories</a>
+              </li>
+              <li class="btn" style="font-weight: bold; color: white; text-decoration: none; display: block;">
+                  <a href="maintenance.html" style="color: white; text-decoration: none; font-size: 10px;">Maintenance</a>
+              </li>
+              <li class="btn" style="font-weight: bold; color: white; text-decoration: none; display: block;">
+                  <a href="dealership.html" style="color: white; text-decoration: none; font-size: 10px;">Dealership</a>
+              </li>
+              <li class="btn" style="font-weight: bold; color: white; text-decoration: none; display: block;">
+                  <a href="contact.html" style="color: white; text-decoration: none; font-size: 10px;">Contact Us</a>
+              </li>
           </ul>
-        </div>
+      </div>
+      
+
+       
+      
 
         <div class="col">
           <h3>
