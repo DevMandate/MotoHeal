@@ -388,7 +388,7 @@ hr{
 .financing-header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
               url('path-to-your-background-image.jpg') center center/cover no-repeat;
-  height: 45vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1034,7 +1034,7 @@ hr{
     <!-- section 2 starts here -->
     <div class="container-fluid p-5 text-white text-center financing-header">
       <div class="row align-items-center">
-        <div class="col-md-8 mx-auto">
+        <div class="col-12 col-md-8 mx-auto">
           <h1 class="display-4" data-aos="fade-up" data-aos-duration="1000">Flexible Financing Options for Your Next Car</h1>
           <p class="lead mt-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             Drive your dream car with affordable payment plans tailored for you.
@@ -1045,8 +1045,9 @@ hr{
           </div>
         </div>
       </div>
-    </div>
+    </div> <br><br>
     <!-- section 2 ends here -->
+
 
     <!-- section 3 starts Here -->
     <div class="container my-5 financing-overview" id="financing-options">
@@ -1089,38 +1090,41 @@ hr{
       <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-12">
           <h3 class="text-center mb-4">Compare Financing Options</h3>
-          <table class="table table-bordered text-center financing-table">
-            <thead>
-              <tr>
-                <th scope="col">Financing Option</th>
-                <th scope="col">Interest Rates</th>
-                <th scope="col">Loan Terms</th>
-                <th scope="col">Down Payment</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Car Loans</td>
-                <td>From 3.5% APR</td>
-                <td>12 to 60 months</td>
-                <td>10% - 20%</td>
-              </tr>
-              <tr>
-                <td>Car Leasing</td>
-                <td>2% - 5% APR</td>
-                <td>24 to 48 months</td>
-                <td>15% - 25%</td>
-              </tr>
-              <tr>
-                <td>Installment Plans</td>
-                <td>No Interest</td>
-                <td>6 to 18 months</td>
-                <td>5% - 10%</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center financing-table">
+              <thead>
+                <tr>
+                  <th scope="col">Financing Option</th>
+                  <th scope="col">Interest Rates</th>
+                  <th scope="col">Loan Terms</th>
+                  <th scope="col">Down Payment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Car Loans</td>
+                  <td>From 3.5% APR</td>
+                  <td>12 to 60 months</td>
+                  <td>10% - 20%</td>
+                </tr>
+                <tr>
+                  <td>Car Leasing</td>
+                  <td>2% - 5% APR</td>
+                  <td>24 to 48 months</td>
+                  <td>15% - 25%</td>
+                </tr>
+                <tr>
+                  <td>Installment Plans</td>
+                  <td>No Interest</td>
+                  <td>6 to 18 months</td>
+                  <td>5% - 10%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
+
     </div>
     
     <!-- section 3 ends here  -->
@@ -1133,45 +1137,49 @@ hr{
           <p class="lead">Estimate your monthly payments by entering the car price, down payment, and loan term.</p>
         </div>
       </div>
-    
+
       <!-- Calculator Form -->
       <div class="row justify-content-center">
-        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200">
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1200">
           <form id="calculator-form">
             <div class="form-group mb-3">
               <label for="car-price">Car Price ($)</label>
               <input type="number" class="form-control" id="car-price" placeholder="Enter car price" required>
             </div>
-    
+
             <div class="form-group mb-3">
               <label for="down-payment">Down Payment ($)</label>
               <input type="number" class="form-control" id="down-payment" placeholder="Enter down payment" required>
             </div>
-    
+
             <div class="form-group mb-3">
               <label for="loan-term">Loan Term (months)</label>
               <input type="number" class="form-control" id="loan-term" placeholder="Enter loan term in months" required>
             </div>
-    
+
             <div class="form-group mb-3">
               <label for="interest-rate">Interest Rate (%)</label>
               <input type="number" class="form-control" id="interest-rate" placeholder="Enter interest rate" required>
             </div>
-    
+
             <button type="button" class="btn btn-primary btn-lg btn-block mt-4 financing-btn" onclick="calculatePayment()">Calculate Your Payment</button>
           </form>
         </div>
       </div>
-    
+
       <!-- Display Calculated Monthly Payment -->
       <div class="row justify-content-center mt-4">
-        <div class="col-md-6">
+        <div class="col-12 col-md-6">
           <div class="calculation-result text-center p-4" data-aos="fade-up" data-aos-duration="1200" id="payment-result" style="display: none;">
             <h3 class="result-title">Estimated Monthly Payment</h3>
             <p class="result-value display-4" id="monthly-payment">$0.00</p>
           </div>
         </div>
       </div>
+
+    
+     
+
     </div>
 
     <script>

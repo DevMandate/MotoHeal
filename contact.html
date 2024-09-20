@@ -388,7 +388,7 @@ hr{
 .contact-header {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
               url('header-bg-image.jpg') center/cover no-repeat;
-  height: 40vh;
+  height: 60vh;
   display: flex;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px; 
@@ -452,109 +452,57 @@ hr{
   }
 }
 
-/* Form Section Styling (Column Mode) */
-.contact-form-section {
-  background: linear-gradient(to right, #0d0d0d, #1a1a1a);
-  padding: 80px 20px;
-  display: flex;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px; 
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-}
-
 .form-container {
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Title and Description Styling */
-.form-title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #f0a500;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  margin-bottom: 15px;
 }
 
-.form-description {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  color: #ccc;
+label {
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Bold labels */
 }
 
-/* Form Field Styling */
-.contact-form .form-group {
-  margin-bottom: 20px;
-  position: relative;
-  width: 100%; /* Ensure the fields take full width */
-}
-
-.contact-form label {
-  font-size: 1.1rem;
-  color: #ddd;
-  margin-bottom: 8px;
-  display: inline-block;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%; /* Full width for each input */
-  padding: 12px 15px;
-  border: 1px solid #444;
-  border-radius: 10px;
-  background-color: #1a1a1a;
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #f0a500;
-  box-shadow: 0 0 8px rgba(240, 165, 0, 0.7);
-}
-
-/* File Upload Styling */
-.file-upload input {
+input, textarea {
   padding: 10px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: #fff;
+  border: 1px solid #ced4da; /* Border for inputs */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
 }
 
-.file-upload input:focus {
-  outline: 2px solid #f0a500;
-}
-
-/* Submit Button Styling */
 .submit-btn {
-  padding: 15px 30px;
-  background-color: #f0a500;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 12px;
   border: none;
-  color: #1a1a1a;
-  font-size: 1.2rem;
-  font-weight: 600;
-  border-radius: 50px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-  background-color: #d98900;
-  transform: scale(1.05);
+  background-color: #0056b3; /* Darker shade on hover */
 }
+
+.result-display {
+  text-align: center; /* Center the text */
+  padding: 20px;
+  border: 1px solid #28a745; /* Success border */
+  border-radius: 4px;
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+}
+
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -1287,51 +1235,58 @@ hr{
         <p class="form-description" data-aos="fade-up" data-aos-delay="100">
           Please fill out the form below, and our team will get back to you as soon as possible.
         </p>
-
-        <!-- Contact Form (Column Layout) -->
-        <form action="#" method="POST" class="contact-form" enctype="multipart/form-data">
+      
+        <!-- Contact Form (Vertical Layout) -->
+        <!-- <form action="#" method="POST" class="contact-form" enctype="multipart/form-data">
           <!-- Name Field -->
           <div class="form-group" data-aos="fade-up" data-aos-delay="200">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
           </div>
-
+      
           <!-- Email Field -->
           <div class="form-group" data-aos="fade-up" data-aos-delay="300">
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
           </div>
-
+      
           <!-- Phone Field -->
           <div class="form-group" data-aos="fade-up" data-aos-delay="400">
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
           </div>
-
+      
           <!-- Subject Field -->
           <div class="form-group" data-aos="fade-up" data-aos-delay="500">
             <label for="subject">Subject</label>
             <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
           </div>
-
+      
           <!-- Message Field -->
           <div class="form-group" data-aos="fade-up" data-aos-delay="600">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="Your message here" required></textarea>
           </div>
-
+      
           <!-- Attachment Field (Optional) -->
           <div class="form-group file-upload" data-aos="fade-up" data-aos-delay="700">
             <label for="file">Attach File (Optional)</label>
             <input type="file" id="file" name="file" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx">
           </div>
-
+      
           <!-- Submit Button -->
           <div class="form-group" data-aos="zoom-in" data-aos-delay="800">
             <button type="submit" class="submit-btn">Send Message</button>
           </div>
         </form>
+      
+        <!-- Result Display Area -->
+        <div id="result-display" class="result-display" style="display: none; margin-top: 20px;">
+          <h3>Thank you for reaching out!</h3>
+          <p>We will get back to you soon.</p>
+        </div> 
       </div>
+      
     </section>
 
 
