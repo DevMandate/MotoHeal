@@ -154,17 +154,47 @@
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
       }
 
-      /* carousel styling */
-      .carousel-caption h1 {
-        font-size: 3.5rem;
-        font-weight: 700;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      }
+      .text-gradient {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-      .carousel-caption p {
-        font-size: 1.5rem;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-      }
+  .caption-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .carousel-caption {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-caption h2 {
+      font-size: 2rem;
+    }
+
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+
+    .carousel-item img {
+      height: 50vh;
+    }
+  }
 
       /* Footer styling starts here */
       footer {
@@ -595,6 +625,14 @@
                     </ul>
                   </li>
                 </ul>
+
+                <!-- Right Side: Login and Register buttons -->
+            <div class="d-flex">
+              <a href="#" class="nav-button btn btn-outline-success me-2" id="login-btn">Login</a>
+              <a href="#" class="nav-button btn btn-outline-info text-success" id="register-btn">Register</a>
+            </div>
+
+
               </div>
             </div>
 
@@ -610,11 +648,7 @@
               </a>
             </div>
 
-            <!-- Right Side: Login and Register buttons -->
-            <div class="d-flex">
-              <a href="#" class="nav-button btn btn-outline-success me-2" id="login-btn">Login</a>
-              <a href="#" class="nav-button btn btn-outline-info text-success" id="register-btn">Register</a>
-            </div>
+            
           </div>
 
           <!-- Form Section (for login/register forms) -->
@@ -822,11 +856,7 @@
     <section class="row">
       <div class="col-md-12 pt-5 pb-5">
         <!-- Carousel Container -->
-        <div
-          id="motohealCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
+        <div id="motohealCarousel" class="carousel slide" data-bs-ride="carousel">
           <!-- Carousel Inner -->
           <div class="carousel-inner">
             <!-- Slide 1 -->
@@ -834,20 +864,15 @@
               <img
                 src="images/S1.jpg"
                 class="d-block w-100"
-                height="850px"
+                style="height: 75vh; object-fit: cover;"
                 alt="MotoHeal Showcase 1"
               />
-              <div
-                class="carousel-caption d-none d-md-block aos-init"
-                data-aos="fade-down"
-                data-aos-delay="200"
-              >
-                <h2 class="display-3 text-light font-weight-bold">
+              <div class="carousel-caption d-none d-md-block aos-init" data-aos="fade-down" data-aos-delay="200">
+                <h2 class="display-3 text-gradient fw-bold">
                   Discover Innovation with MotoHeal
                 </h2>
-                <p class="lead text-light font-italic">
-                  Redefining car ownership with cutting-edge technology and
-                  services.
+                <p class="lead caption-text">
+                  Redefining car ownership with cutting-edge technology and services.
                 </p>
               </div>
             </div>
@@ -857,20 +882,15 @@
               <img
                 src="images/s2.avif"
                 class="d-block w-100"
-                height="850px"
+                style="height: 75vh; object-fit: cover;"
                 alt="MotoHeal Showcase 2"
               />
-              <div
-                class="carousel-caption d-none d-md-block aos-init"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <h2 class="display-3 text-light font-weight-bold">
+              <div class="carousel-caption d-none d-md-block aos-init" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="display-3 text-gradient fw-bold">
                   Unmatched Performance & Reliability
                 </h2>
-                <p class="lead text-light font-italic">
-                  Experience smooth rides with vehicles engineered to
-                  perfection.
+                <p class="lead caption-text">
+                  Experience smooth rides with vehicles engineered to perfection.
                 </p>
               </div>
             </div>
@@ -880,18 +900,14 @@
               <img
                 src="images/s3.jpg"
                 class="d-block w-100"
-                height="850px"
+                style="height: 75vh; object-fit: cover;"
                 alt="MotoHeal Showcase 3"
               />
-              <div
-                class="carousel-caption d-none d-md-block aos-init"
-                data-aos="fade-left"
-                data-aos-delay="300"
-              >
-                <h2 class="display-3 text-light font-weight-bold">
+              <div class="carousel-caption d-none d-md-block aos-init" data-aos="fade-left" data-aos-delay="300">
+                <h2 class="display-3 text-gradient fw-bold">
                   Luxury Meets Affordability
                 </h2>
-                <p class="lead text-light font-italic">
+                <p class="lead caption-text">
                   Drive your dream car with our flexible financing options.
                 </p>
               </div>
@@ -902,20 +918,15 @@
               <img
                 src="images/s4.jpg"
                 class="d-block w-100"
-                height="850px"
+                style="height: 75vh; object-fit: cover;"
                 alt="MotoHeal Showcase 4"
               />
-              <div
-                class="carousel-caption d-none d-md-block aos-init"
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                <h2 class="display-3 text-light font-weight-bold">
+              <div class="carousel-caption d-none d-md-block aos-init" data-aos="fade-right" data-aos-delay="300">
+                <h2 class="display-3 text-gradient fw-bold">
                   Expert Maintenance for Every Journey
                 </h2>
-                <p class="lead text-light font-italic">
-                  Keep your car running at its best with our trusted care
-                  services.
+                <p class="lead caption-text">
+                  Keep your car running at its best with our trusted care services.
                 </p>
               </div>
             </div>
@@ -929,7 +940,7 @@
             role="button"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon bg-danger"></span>
+            <span class="carousel-control-prev-icon bg-danger rounded-circle p-2"></span>
           </a>
           <a
             href="#motohealCarousel"
@@ -937,7 +948,7 @@
             role="button"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon bg-danger"></span>
+            <span class="carousel-control-next-icon bg-danger rounded-circle p-2"></span>
           </a>
 
           <!-- Indicators -->
@@ -970,7 +981,6 @@
         </div>
       </div>
     </section>
-
     <!-- Section 2 ends here -->
 
     <!-- Section 3 starts here -->
@@ -1131,167 +1141,183 @@
         Shop Cars for Sale in Kenya by Brands
       </h3>
 
-      <div
-        class="small-container d-flex justify-content-around flex-wrap p-5"
-        style="gap: 7px"
-      >
+      <div class="small-container d-flex justify-content-around flex-wrap p-5" style="gap: 7px">
         <img
           src="images/toyota.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/nissan.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/benx.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/honda.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/bmw.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/lexus.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/lrover.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/bentley.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
       </div>
-
-      <div
-        class="small-container d-flex justify-content-around flex-wrap p-5"
-        style="gap: 7px"
-      >
+      
+      <div class="small-container d-flex justify-content-around flex-wrap p-5" style="gap: 7px">
         <img
           src="images/peug.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/porsche.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/mazda.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/mb.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/vw.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/volvo.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/audi.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/infiniti.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
       </div>
-
-      <div
-        class="small-container d-flex justify-content-around flex-wrap p-5"
-        style="gap: 7px"
-      >
+      
+      <div class="small-container d-flex justify-content-around flex-wrap p-5" style="gap: 7px">
         <img
           src="images/ford.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/mini.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/must.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/cadillac.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/bentley.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/tesla.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/rr.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
         <img
           src="images/rena.png"
-          width="200px"
+          class="img-fluid"
+          style="max-width: 100px;"
           data-aos="zoom-in"
           data-aos-duration="3000"
         />
       </div>
+      
     </section>
     <br />
 
@@ -1525,7 +1551,7 @@
             <p>
               <b>Fuel: </b>
               <span class="badge bg-primary text-white"
-                >Diesel Variants Available</span
+                >Diesel Available</span
               >
               Petrol
             </p>
@@ -1577,7 +1603,7 @@
             <p>
               <b>Fuel: </b>
               <span class="badge bg-primary text-white"
-                >Petrol Variants Available</span
+                >Petrol Available</span
               >
               Diesel
             </p>
@@ -1629,7 +1655,7 @@
             <p>
               <b>Fuel: </b>
               <span class="badge bg-primary text-white"
-                >Diesel Variants Available</span
+                >Diesel Available</span
               >
               Petrol
             </p>
@@ -1681,7 +1707,7 @@
             <p>
               <b>Fuel: </b>
               <span class="badge bg-primary text-white"
-                >Diesel Variants Available</span
+                >Diesel Available</span
               >
               Petrol
             </p>
@@ -1736,7 +1762,7 @@
             <p>
               <b>Fuel: </b>
               <span class="badge bg-primary mine text-white"
-                >Diesel Variants Available</span
+                >Diesel Available</span
               >
               Petrol
             </p>
@@ -1788,7 +1814,7 @@
             <p>
               <b>Fuel: </b>
               <span class="badge bg-primary mine text-white"
-                >Petrol Variants Available</span
+                >Petrol Available</span
               >
               Diesel
             </p>
@@ -1836,7 +1862,7 @@
             <p>
               <b>Fuel: </b>
               <span class="badge bg-primary mine text-white"
-                >Diesel Variants Available</span
+                >Diesel Available</span
               >
               Petrol
             </p>
